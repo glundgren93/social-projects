@@ -8,12 +8,10 @@ const setContent = (contents) => ({
     contents
 });
 
-
 export const getContent = () => {
   return (dispatch) => {
-    axios.get(ROOT_URL)
-      .then(function({ data }) {
-        dispatch(setContent(data));
-      });
+    axios.get(ROOT_URL).then(({data}) => {
+      dispatch(setContent(data));
+    });
   };
 };
