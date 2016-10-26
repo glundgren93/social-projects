@@ -1,6 +1,6 @@
 import * as actionTypes from '../constants/actionTypes';
 
-const initialState = [];
+const initialState = {};
 
 export const content = (state = initialState, action) => {
   switch (action.type) {
@@ -13,5 +13,5 @@ export const content = (state = initialState, action) => {
 
 const setContent = (state, action) => {
   const { contents } = action;
-  return [...state, ...contents];
+  return contents;
 }

@@ -11,7 +11,7 @@ const setContent = (contents) => ({
 export const getContent = () => {
   return (dispatch) => {
     axios.get(ROOT_URL).then(({data}) => {
-      dispatch(setContent(data));
+      dispatch(setContent(data.byId));
     });
   };
 };

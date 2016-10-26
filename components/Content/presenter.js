@@ -7,12 +7,11 @@ class Content extends Component {
 
   render() {
     const { contents } = this.props;
-
-    const contentList = contents.map((content) => {
+    const contentList = Object.keys(contents).map((key) => {
       return [
-        <li>{content.name}</li>,
-        <li>{content.location}</li>,
-        <li>{content.description}</li>
+        <li>{contents[key].name}</li>,
+        <li>{contents[key].location}</li>,
+        <li>{contents[key].description}</li>,
       ]
     });
 
