@@ -3,15 +3,15 @@ import axios from 'axios';
 
 export const ROOT_URL = 'https://social-projects-fbe1f.firebaseio.com/projects.json';
 
-const setContent = (contents) => ({
-    type: actionTypes.CONTENT_SET,
-    contents
+const setProjects = (projects) => ({
+    type: actionTypes.PROJECT_SET,
+    projects
 });
 
-export const getContent = () => {
+export const getProjects = () => {
   return (dispatch) => {
     axios.get(ROOT_URL).then(({data}) => {
-      dispatch(setContent(data.byId));
+      dispatch(setProjects(data.byId));
     });
   };
 };

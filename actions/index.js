@@ -1,5 +1,5 @@
-import { getContent } from './content';
+import { getProjects } from './project';
 
 export {
-  getContent
+  getProjects
 };

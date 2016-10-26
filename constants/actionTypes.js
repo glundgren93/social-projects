@@ -1,1 +1,1 @@
-export const CONTENT_SET = 'CONTENT_SET';
+export const PROJECT_SET = 'PROJECT_SET';

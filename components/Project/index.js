@@ -1,14 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { getContent } from '../../actions';
-import Content from './presenter';
+import { getProjects } from '../../actions';
+import Project from './presenter';
 
 const mapStateToProps = (state) => ({
-    contents: state.content
+    projects: state.project
 })
 
 export default connect(
   mapStateToProps,
-  { getContent } // injects getContent
-)(Content);
+  { getProjects } // injects getContent
+)(Project);
