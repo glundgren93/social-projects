@@ -10,10 +10,15 @@ class Project extends Component {
     const contentList = Object.keys(projects).map((key) => {
       return [
         <div className="col-md-4">
-          <h2>{projects[key].name}</h2>
-          <p>{projects[key].location}</p>
-          <p>{projects[key].description}</p>
-          <p><a className="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <div className="thumbnail clearfix">
+            <img src="./images/a.jpg" alt="..."/>
+            <div className="caption">
+              <h3>{projects[key].name}</h3>
+              <p>{projects[key].description}</p>
+              <p>{projects[key].location}</p>
+              <p><a className="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            </div>
+          </div>
         </div>
       ]
     });
