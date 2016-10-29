@@ -6,6 +6,7 @@ import { syncHistoryWithStore } from 'react-router-redux';
 import configureStore from '../store/configureStore';
 import * as actions from '../actions';
 import App from '../components/App';
+import ProjectList from '../components/ProjectList';
 import Project from '../components/Project';
 
 const store = configureStore();
@@ -16,7 +17,8 @@ render(
   <Provider store={store}>
    <Router history={history}>
       <Route path="/" component={App}>
-      <IndexRoute component={Project} />
+      <IndexRoute component={ProjectList} />
+      <Route path="/project/:projectId" component={Project} />
       </Route>
     </Router>
   </Provider>,

@@ -1,5 +1,6 @@
-import { getProjects } from './project';
+import { getProjects, getProject } from './project';
 
 export {
-  getProjects
+  getProjects,
+  getProject
 };
