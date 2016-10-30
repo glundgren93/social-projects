@@ -4,7 +4,7 @@ import Jumbotron from '../Jumbotron';
 
 const Home = () => {
   return (
-    <div>
+    <div className="home">
       <Jumbotron header="Fratres Sumus" paragraph="‘Amarás o teu próximo como a ti mesmo.’ Mateus 22:39"/>
       <ProjectList />
     </div>

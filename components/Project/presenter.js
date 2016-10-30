@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import Jumbotron from '../Jumbotron';
 
 class Project extends Component {
   componentWillMount() {
@@ -12,7 +13,10 @@ class Project extends Component {
     return (
       <div className="container">
         <div className="row">
-        {project.name}
+          <div className="page-header">
+            <h1>{project.name} </h1>
+          </div>
+          <Jumbotron paragraph={project.description} />
         </div>
       </div>
     );
