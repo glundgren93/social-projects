@@ -10,9 +10,9 @@ class ProjectList extends Component {
     const { projects } = this.props;
     const contentList = Object.keys(projects).map((key) => {
       return [
-        <div className="col-md-4">
+        <div className="col-md-3">
           <Link to={`/project/${projects[key].id}`} key={ projects[key].id}>
-            <div className="thumbnail clearfix project-list-thumbnail">
+            <div className="thumbnail clearfix project-list-thumbnail text-center">
               <img src={projects[key].imgPath} alt="..." className="img-circle"/>
               <div className="caption">
                 <h3>{projects[key].name}</h3>
@@ -29,7 +29,7 @@ class ProjectList extends Component {
     return (
       <div className="container">
         <div className="row">
-        <h2 className="project-list-heading">Confira o que irá rolar em breve!</h2>
+        <h2 className="text-center">Confira o que irá rolar em breve!</h2>
         <hr/>
         { contentList }
         </div>
