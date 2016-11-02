@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
-import { projectList, project } from './project';
+import { project } from './project';
+import { projectList } from './projectList';
 
 export default combineReducers({
   projectList,
