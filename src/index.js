@@ -10,6 +10,7 @@ import Home from '../components/Home';
 import Project from '../components/Project';
 
 const store = configureStore();
+store.dispatch({ type: 'INIT' });
 const history = syncHistoryWithStore(browserHistory, store);
 
 render(
