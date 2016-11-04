@@ -10,6 +10,10 @@ var publicPath = path.resolve(__dirname, 'dist');
 // We point to our static assets
 app.use(express.static(publicPath));
 
+app.get('/', function(request, response) {
+  response.sendFile(__dirname + '/dist/index.html')
+});
+
 // And run the server
 app.listen(port, function () {
   console.log('Server running on port ' + port);
