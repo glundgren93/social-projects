@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --progress --colors --hot --config ./webpack.config.js",
-    "build": "webpack -p --progress --colors --config ./webpack.prod.config.js node server.js"
+    "dev": "webpack-dev-server --progress --colors --hot --config ./webpack.config.js",
+    "build": "webpack --config ./webpack.prod.config.js --progress --colors",
+    "start": "node ./server.js"
   },
   "babel": {
     "presets": [
