@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --progress --colors --hot --config ./webpack.config.js",
-    "build": "SET NODE_ENV=production webpack -p --progress --colors --config ./webpack.prod.config.js"
+    "build": "webpack -p --progress --colors --config ./webpack.prod.config.js"
   },
   "babel": {
     "presets": [
@@ -37,7 +37,6 @@
     "redux-logger": "^2.6.1",
     "redux-promise": "^0.5.3",
     "redux-thunk": "^2.1.0",
-    "url-loader": "^0.5.7",
-    "whatwg-fetch": "^1.0.0"
+    "url-loader": "^0.5.7"
   }
 }
