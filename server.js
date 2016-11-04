@@ -14,6 +14,8 @@ app.get('*', function(request, response) {
   response.sendFile(path.join(publicPath))
 });
 
+app.use(fallback('index.html', { root: publicPath }))
+
 // And run the server
 app.listen(port, function () {
   console.log('Server running on port ' + port);
