@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import ProjectListItem from '../ProjectListItem';
 
 class ProjectList extends Component {
   componentWillMount() {
@@ -10,19 +10,7 @@ class ProjectList extends Component {
     const { projects } = this.props;
     const contentList = Object.keys(projects).map((key) => {
       return [
-        <div className="col-md-3">
-          <Link to={`/project/${projects[key].id}`} key={ projects[key].id}>
-            <div className="thumbnail clearfix project-list-thumbnail text-center">
-              <img src={projects[key].imgPath} alt="..." className="img-circle"/>
-              <div className="caption">
-                <h3>{projects[key].name}</h3>
-                <hr/>
-                <p>{projects[key].briefDescription}</p>
-                <p><span className="glyphicon glyphicon-calendar" aria-hidden="true"></span> {projects[key].date}</p>
-              </div>
-            </div>
-          </Link>
-        </div>
+        <ProjectListItem project={projects[key]}/>
       ]
     });
 
