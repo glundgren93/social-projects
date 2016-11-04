@@ -1,4 +1,5 @@
 var express = require('express');
+var fallback = require('express-history-api-fallback');
 var path = require('path');
 
 var app = express();
