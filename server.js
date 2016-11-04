@@ -10,7 +10,7 @@ var publicPath = path.resolve(__dirname, './dist');
 // We point to our static assets
 app.use(express.static(publicPath));
 
-app.get('/', function(request, response) {
+app.get('*', function(request, response) {
   response.sendFile(__dirname + './dist/index.html')
 });
 
