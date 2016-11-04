@@ -5,10 +5,9 @@ var app = express();
 
 var isProduction = process.env.NODE_ENV === 'production';
 var port = isProduction ? process.env.PORT : 3000;
-var publicPath = path.resolve(__dirname, './dist');
+const publicPath = express.static(path.join(__dirname, './dist'))
 
-// We point to our static assets
-app.use(express.static(publicPath));
+app.use('/dist', publicPath)
 
 app.get('*', function(request, response) {
   response.sendFile(__dirname + './dist/index.html')
