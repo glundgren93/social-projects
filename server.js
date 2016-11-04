@@ -11,7 +11,7 @@ var publicPath = path.resolve(__dirname, './dist');
 app.use(express.static(publicPath));
 
 app.get('*', function(request, response) {
-  response.sendFile(__dirname + './dist/index.html')
+  response.sendFile(publicPath)
 });
 
 // And run the server
