@@ -15,12 +15,20 @@ class Project extends Component {
     const Panel = Collapse.Panel;
 
     const collapse = (
+      project && project.organizer ?
       <Collapse accordion={true}>
         <Panel className="bold" header="O que?">{project.description}</Panel>
         <Panel header="Quando?">{project.date}</Panel>
         <Panel header="Onde?">{project.location}</Panel>
-        <Panel header="Contato">{project.date}</Panel>
+        <Panel header="Contato">
+          <ul>
+            <li><span className="glyphicon glyphicon-user" aria-hidden="true"> </span> { project.organizer.name  }</li>
+            <li><span className="glyphicon glyphicon-envelope" aria-hidden="true"> </span> { project.organizer.email  }</li>
+            <li><span className="glyphicon glyphicon-phone" aria-hidden="true"> </span> { project.organizer.phone  }</li>
+          </ul>
+        </Panel>
       </Collapse>
+      : 'Carregando'
     );
 
     return (
