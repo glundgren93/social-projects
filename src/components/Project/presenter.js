@@ -38,6 +38,7 @@ class Project extends Component {
             {collapse}
           </div>
         </div>
+        <hr/>
         <ReactDisqus shortname="socialprojects" identifier={project.id} />
       </div>
     );
