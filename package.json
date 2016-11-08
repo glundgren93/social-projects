@@ -33,6 +33,7 @@
     "express": "^4.14.0",
     "express-history-api-fallback": "^2.0.0",
     "file-loader": "^0.9.0",
+    "moment": "^2.15.2",
     "rc-collapse": "^1.6.9",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",

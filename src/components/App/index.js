@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../Navbar';
 import Jumbotron from '../Jumbotron';
+import Footer from '../Footer';
 
 const App = ({ children }) => {
   return (
@@ -9,6 +10,7 @@ const App = ({ children }) => {
       <div>
         {children}
       </div>
+      <Footer />
     </div>
   )
 }
