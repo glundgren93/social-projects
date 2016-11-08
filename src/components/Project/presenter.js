@@ -24,17 +24,19 @@ class Project extends Component {
 
     return (
       <div>
-            <div className="page-header text-center">
-              <h1>{project.name} </h1>
+          <div className="page-header text-center">
+            <h1>{project.name} </h1>
+          </div>
+          <div className="col-md-12">
+          <div className="media project-media">
+            <div className="media-left media-middle">
+              <img className="media-object img-thumbnail" src={project.imgPath} alt="..." />
             </div>
-              <div className="media project-media">
-                <div className="media-left media-middle">
-                  <img className="media-object img-thumbnail" src={project.imgPath} alt="..." />
-                </div>
-                <div className="media-body">
-                  {collapse}
-                </div>
-              </div>
+            <div className="media-body">
+              {collapse}
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
