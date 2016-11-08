@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import Jumbotron from '../Jumbotron';
 import Collapse from 'rc-collapse';
 import 'rc-collapse/assets/index.css';
-import ReactDisqus from 'react-disqus';
+import ReactDisqus from '../ReactDisqus';
 
 class Project extends Component {
   componentWillMount() {
