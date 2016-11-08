@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import Jumbotron from '../Jumbotron';
 import Collapse from 'rc-collapse';
 import 'rc-collapse/assets/index.css';
+import ReactDisqus from 'react-disqus';
 
 class Project extends Component {
   componentWillMount() {
@@ -37,6 +38,7 @@ class Project extends Component {
             {collapse}
           </div>
         </div>
+        <ReactDisqus shortname="socialprojects" identifier={project.id} />
       </div>
     );
   }

@@ -36,6 +36,7 @@
     "moment": "^2.15.2",
     "rc-collapse": "^1.6.9",
     "react": "^15.1.0",
+    "react-disqus": "^1.0.2",
     "react-dom": "^15.1.0",
     "react-google-maps": "^6.0.1",
     "react-redux": "^4.4.5",
