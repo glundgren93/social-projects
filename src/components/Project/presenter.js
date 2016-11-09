@@ -1,8 +1,9 @@
+import 'rc-collapse/assets/index.css';
+
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import Jumbotron from '../Jumbotron';
 import Collapse from 'rc-collapse';
-import 'rc-collapse/assets/index.css';
 import ReactDisqus from '../ReactDisqus';
 
 class Project extends Component {
@@ -15,12 +16,19 @@ class Project extends Component {
     const Panel = Collapse.Panel;
 
     const collapse = (
-      project && project.organizer ?
-      <Collapse accordion={true}>
+      project && project.organizer && project.institution ?
+      <Collapse accordion={false}>
         <Panel className="bold" header="O que?">{project.description}</Panel>
         <Panel header="Quando?">{project.date}</Panel>
         <Panel header="Onde?">{project.location}</Panel>
-        <Panel header="Contato">
+        <Panel header="Contato da Instituição">
+          <ul>
+            <li><span className="glyphicon glyphicon-user" aria-hidden="true"> </span> { project.institution.name  }</li>
+            <li><span className="glyphicon glyphicon-envelope" aria-hidden="true"> </span> { project.institution.email  }</li>
+            <li><span className="glyphicon glyphicon-phone" aria-hidden="true"> </span> { project.institution.phone  }</li>
+          </ul>
+        </Panel>
+        <Panel header="Organizador da Ação">
           <ul>
             <li><span className="glyphicon glyphicon-user" aria-hidden="true"> </span> { project.organizer.name  }</li>
             <li><span className="glyphicon glyphicon-envelope" aria-hidden="true"> </span> { project.organizer.email  }</li>
