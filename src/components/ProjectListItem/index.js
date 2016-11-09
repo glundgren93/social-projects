@@ -11,7 +11,6 @@ const ProjectListItem = ({ project }) => {
               <div className="card-block">
                   <h4 className="card-title">{project.name}</h4>
                   <p className="card-text">{ project.briefDescription }</p>
-                  <p className="card-text">{ project.date }</p>
                   <Link className="btn btn-primary" to={`/project/${project.id}`} key={ project.id }>Veja mais</Link>
               </div>
           </div>

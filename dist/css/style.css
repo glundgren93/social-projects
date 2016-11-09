@@ -126,3 +126,7 @@ h4.card-title {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+p.card-text {
+    height: 100px;
+}
