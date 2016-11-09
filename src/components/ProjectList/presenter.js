@@ -15,15 +15,17 @@ class ProjectList extends Component {
     });
 
     return (
-      <div className="container">
-          <div className="row heading">
-            <div className="col-md-12">
-              <h2 className="h2-responsive"><strong>Confira o que irá rolar em breve!</strong></h2>
+      <div>
+        <div className="container">
+            <div className="divider-new">
+                <h2 className="h2-responsive wow fadeInDown">Confira o que irá rolar em breve!</h2>
             </div>
-          </div>
-          <div className="row">
-            { contentList }
-          </div>
+            <section id="best-features">
+                <div className="row">
+                  { contentList }
+                </div>
+            </section>
+        </div>
       </div>
     );
   }

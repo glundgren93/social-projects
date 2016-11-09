@@ -1,19 +1,9 @@
-/**
- * Theme
- */
-
-:root {
-    --primary-color: #607d8b;
-    --secundary-color: #FFAB40;
-}
-
-html, body, .home {
+html, body, .view, .home {
     height: 100%;
 }
 
 body {
     overflow-x: hidden !important;
-    font-family: 'Roboto', sans-serif !important;
 }
 
 #app {
@@ -31,94 +21,63 @@ body {
     background-color: transparent;
 }
 
+.scrolling-navbar {
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+
 .top-nav-collapse {
-    background-color: #607d8b;
-}
-
-.carousel-item h1 {
-    font-weight: bold;
-    font-size: 5em;
-    text-shadow: 0 0 20px #000;
-}
-
-.carousel-item p {
-    text-shadow: 0 0 20px #000;
-    font-size: 1.2em;
-}
-
-.heading h2 {
-    text-align: center;
-    padding: 16px 0;
-}
-
-.btn-primary {
-    background: #FFAB40;
-    color: #fff !important;
-}
-
-.btn-primary:hover {
-    background: #FFAB40;
-    color: #fff !important;
+    background-color: #1C2331;
 }
 
 footer.page-footer {
-    background-color: #607d8b;
+    background-color: #1C2331;
+    margin-top: 2rem;
 }
 
 @media only screen and (max-width: 768px) {
     .navbar {
-        background-color: #607d8b;
+        background-color: #1C2331;
     }
 }
 
 
-/* Carousel*/
-
-.carousel {
-    height: 50%;
-}
-
-@media (max-width: 776px) {
-    .carousel {
-        height: 100%;
-    }
-}
-
-.carousel-item, .active {
-    height: 100%;
-}
-
-.carousel-inner {
-    height: 100%;
-}
-
-.carousel-item:nth-child(1) {
-    background-image: url("../images/helping.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.4;
-}
-
-
-/*Caption*/
+/*Call to action*/
 
 .flex-center {
     color: #fff;
 }
 
+.home-img {
+    background: url("../images/helping.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/*Contact section*/
+
+#contact .fa {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1C2331;
+}
+
 .card img {
-  width: 300px;
-  height: 225px;
+    width: 300px;
+    height: 225px;
 }
 
-.card a:focus,
-.card a:hover{
-  color: black;
+.card a:focus, .card a:hover {
+    color: black;
 }
 
-.card a{
-  color: black;
-  cursor: pointer;
+.card a {
+    color: black;
+    cursor: pointer;
 }
 
 h4.card-title {
@@ -128,5 +87,7 @@ h4.card-title {
 }
 
 p.card-text {
-    height: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

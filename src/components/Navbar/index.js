@@ -9,7 +9,7 @@ const Navbar = ({name}) => {
         </button>
         <div className="container">
             <div className="collapse navbar-toggleable-xs" id="collapseEx">
-                <Link className="navbar-brand" to="/">{name}</Link>
+               <Link className="navbar-brand" to="/">{name}</Link>
             </div>
         </div>
       </nav>
