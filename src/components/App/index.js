@@ -7,9 +7,7 @@ const App = ({ children }) => {
   return (
     <div>
       <Navbar name="Social Project App"/>
-      <div>
-        {children}
-      </div>
+      {children}
       <Footer />
     </div>
   )

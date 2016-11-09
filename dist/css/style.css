@@ -1,0 +1,128 @@
+/**
+ * Theme
+ */
+
+:root {
+    --primary-color: #607d8b;
+    --secundary-color: #FFAB40;
+}
+
+html, body, .home {
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+#app {
+    height: 100%;
+}
+
+#app div[data-reactroot] {
+    height: 100%;
+}
+
+
+/* Navigation*/
+
+.navbar {
+    background-color: transparent;
+}
+
+.top-nav-collapse {
+    background-color: #607d8b;
+}
+
+.carousel-item h1 {
+    font-weight: bold;
+    font-size: 5em;
+    text-shadow: 0 0 20px #000;
+}
+
+.carousel-item p {
+    text-shadow: 0 0 20px #000;
+    font-size: 1.2em;
+}
+
+.heading h2 {
+    text-align: center;
+    padding: 16px 0;
+}
+
+.btn-primary {
+    background: #FFAB40;
+    color: #fff !important;
+}
+
+.btn-primary:hover {
+    background: #FFAB40;
+    color: #fff !important;
+}
+
+footer.page-footer {
+    background-color: #607d8b;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #607d8b;
+    }
+}
+
+
+/* Carousel*/
+
+.carousel {
+    height: 50%;
+}
+
+@media (max-width: 776px) {
+    .carousel {
+        height: 100%;
+    }
+}
+
+.carousel-item, .active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item:nth-child(1) {
+    background-image: url("../images/helping.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+}
+
+
+/*Caption*/
+
+.flex-center {
+    color: #fff;
+}
+
+.card img {
+  width: 300px;
+  height: 225px;
+}
+
+.card a:focus,
+.card a:hover{
+  color: black;
+}
+
+.card a{
+  color: black;
+  cursor: pointer;
+}
+
+h4.card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
