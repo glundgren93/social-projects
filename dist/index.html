@@ -3,70 +3,35 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Social Projects</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-    <style media="screen">
-        /* Move down content because we have a fixed navbar that is 50px tall */
-
-        body {
-            padding-top: 50px;
-            padding-bottom: 70px;
-        }
-
-        .home .jumbotron {
-            background-image: url("../images/helping.jpg");
-            background-size: cover;
-            background-position: center center;
-            color: #EEEEEE;
-            text-align: center;
-            font-weight: bold;
-        }
-
-        a:focus,
-        a:hover {
-            text-decoration: none;
-        }
-
-        .project-list-thumbnail {
-            width: 300px;
-            height: 400px;
-        }
-
-        .project-list-thumbnail img {
-            width: 200px;
-            height: 180px;
-        }
-
-        .project-list-thumbnail h3 {
-            height: 50px;
-        }
-
-        .project-media img {
-            height: 300px;
-            width: 350px;
-        }
-
-        .rc-collapse {
-            font-size: 22px;
-        }
-
-        footer{
-          background-color: #EEEEEE;
-          border-top: 1px solid #ddd;
-          border-bottom: 1px solid #ddd;
-        }
-
-    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- App Theme -->
+    <link href="../css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <div id="app"></div>
 
+    <!-- JQuery -->
+    <script type="text/javascript" src="../libs/jquery-2.2.3.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../libs/tether.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../libs/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../libs/mdb.min.js"></script>
     <script src="/bundle.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

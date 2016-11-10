@@ -1,0 +1,108 @@
+html, body, .view, .home {
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden !important;
+}
+
+#app {
+    height: 100%;
+}
+
+#app div[data-reactroot] {
+    height: 100%;
+}
+
+/* Navigation*/
+
+.navbar {
+    background-color: #1C2331;;
+}
+
+.scrolling-navbar {
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+
+.top-nav-collapse {
+    background-color: #1C2331;
+}
+
+footer.page-footer {
+    background-color: #1C2331;
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #1C2331;
+    }
+}
+
+.product-wrapper img{
+  height: 320px;
+  width: 730px;
+}
+
+/*Call to action*/
+
+.flex-center {
+    color: #fff;
+}
+
+.home-img {
+    background: url("../images/helping.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*Contact section*/
+
+#contact .fa {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1C2331;
+}
+
+.card img {
+    width: 300px;
+    height: 225px;
+}
+
+.card a:focus, .card a:hover {
+    color: black;
+}
+
+.card a {
+    color: black;
+    cursor: pointer;
+}
+
+h4.card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+p.card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+main {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.widget-wrapper {
+    padding-bottom: 1rem;
+}
+
+.reviews {
+    padding-left: 1rem;
+}

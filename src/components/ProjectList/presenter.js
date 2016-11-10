@@ -15,11 +15,16 @@ class ProjectList extends Component {
     });
 
     return (
-      <div className="container">
-        <div className="row">
-        <h2 className="text-center">Confira o que irá rolar em breve!</h2>
-        <hr/>
-        { contentList }
+      <div>
+        <div className="container">
+            <div className="divider-new">
+                <h2 className="h2-responsive wow fadeInDown">Confira o que irá rolar em breve!</h2>
+            </div>
+            <section id="best-features">
+                <div className="row">
+                  { contentList }
+                </div>
+            </section>
         </div>
       </div>
     );
