@@ -55,27 +55,28 @@ class Project extends Component {
                   <div className="product-wrapper">
                     <div className="view overlay hm-white-light z-depth-1-half">
                       <img src={project.imgPath} className="img-fluid" alt=""/>
-                      <div className="mask">
-                      </div>
                     </div>
-                    <br/>
-                    <h2 className="h2-responsive">{project.name}</h2>
-                    <hr/>
-                    <p><span><i className="fa fa-info-circle"></i> {project.description}</span></p>
                   </div>
                 </div>
               </div>
               <div className="row">
                 <div className="reviews">
-                    <h2 className="h2-responsive">Quando?</h2>
                     <hr/>
+                    <h2 className="h2-responsive">{project.name}</h2>
+                    <p><span><i className="fa fa-info-circle"></i> {project.description}</span></p>
+                </div>
+              </div>
+              <div className="row">
+                <div className="reviews">
+                    <hr/>
+                    <h2 className="h2-responsive">Quando?</h2>
                     <p><span><i className="fa fa-calendar"></i> {project.date}</span></p>
                 </div>
               </div>
               <div className="row">
                 <div className="reviews">
-                    <h2 className="h2-responsive">Onde?</h2>
                     <hr/>
+                    <h2 className="h2-responsive">Onde?</h2>
                     <p><span><i className="fa fa-location-arrow"></i> {project.location}</span></p>
                 </div>
               </div>
