@@ -14,11 +14,10 @@ body {
     height: 100%;
 }
 
-
 /* Navigation*/
 
 .navbar {
-    background-color: transparent;
+    background-color: #1C2331;;
 }
 
 .scrolling-navbar {
@@ -42,6 +41,10 @@ footer.page-footer {
     }
 }
 
+.product-wrapper img{
+  height: 320px;
+  width: 730px;
+}
 
 /*Call to action*/
 
@@ -56,7 +59,6 @@ footer.page-footer {
     -o-background-size: cover;
     background-size: cover;
 }
-
 
 /*Contact section*/
 
@@ -90,4 +92,17 @@ p.card-text {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+main {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.widget-wrapper {
+    padding-bottom: 1rem;
+}
+
+.reviews {
+    padding-left: 1rem;
 }
