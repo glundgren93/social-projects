@@ -83,9 +83,10 @@ class Project extends Component {
             </div>
           </div>
         </div>
-
         <hr/>
-        <ReactDisqus shortname="socialprojects" identifier={project.id} />
+        <div className="container">
+          <ReactDisqus shortname="socialprojects" identifier={project.id} />
+        </div>
       </main>
       <Footer />
       </div>

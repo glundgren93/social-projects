@@ -13,6 +13,10 @@ const store = configureStore();
 store.dispatch({ type: 'INIT' });
 const history = syncHistoryWithStore(browserHistory, store);
 
+require('../dist/css/style.css');
+require('../dist/css/bootstrap.min.css');
+require('../dist/css/mdb.min.css');
+
 render(
   <Provider store={store}>
    <Router history={history}>

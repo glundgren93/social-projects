@@ -53,7 +53,7 @@ footer.page-footer {
 }
 
 .home-img {
-    background: url("../images/helping.jpg")no-repeat center center fixed;
+    background: url("../img/helping.jpg")no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -73,11 +73,11 @@ footer.page-footer {
     height: 225px;
 }
 
-.card a:focus, .card a:hover {
+.project-item a:focus, .project-item a:hover {
     color: black;
 }
 
-.card a {
+.project-item a {
     color: black;
     cursor: pointer;
 }
